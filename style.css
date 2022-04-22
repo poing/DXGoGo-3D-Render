@@ -62,26 +62,34 @@ body {
   opacity: 0.8;
 }
 
+/* Overlap - From Top of Image */
 .cube img:nth-child(1) {
   transform: rotateY(0deg) translateZ(100px) translateY(35px);
-  clip-path: inset(0px 0px 86.3% 0px);
+  /* clip-path: inset(0px 0px 86.3% 0px); */
+  clip-path: inset(0px 0px 86.1814042960156% 0px);
 }
+/* Overlap - From Bottom of Image */
 .cube img:nth-child(2) {
   transform: rotateY(0deg) translateZ(100px) translateY(-750px);
-  clip-path: inset(83.5% 0px 00px 0px);
+  /* clip-path: inset(83.5% 0px 00px 0px); */
+  clip-path: inset(83.6152131462296% 0px 0px 0px);
 }
+/* Top */
 .cube img:nth-child(3) {
   transform: rotateX(180deg) translateY(374px) translateZ(100px);
-  clip-path: inset(37.8% 0px 39.2% 0px);
+  /* clip-path: inset(37.8% 0px 39.2% 0px); */
+  clip-path: inset(38.1819570252983% 0px 39.6579623925905% 0px);
 }
 .cube img:nth-child(4) {
   transform: rotateY(-90deg) translateZ(-100px) translateY(-100px);
-  clip-path: inset(15% 0px 24% 0px);
+  /* clip-path: inset(15% 0px 24% 0px); */
 }
+/* Back */
 .cube img:nth-child(5) {
   transform: rotateX(270deg) translateX(0px) translateY(202px)
     translateZ(-273px);
-  clip-path: inset(14.2% 0px 62.1% 0px);
+  /* clip-path: inset(14.2% 0px 62.1% 0px); */
+  clip-path: inset(13.8185957039844% 0px 61.8180429747017% 0px);
 }
 .cube img:nth-child(6) {
   transform: rotateX(90deg) translateY(-186px) translateZ(465px);
