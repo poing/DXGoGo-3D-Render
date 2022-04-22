@@ -62,15 +62,30 @@ body {
   opacity: 0.8;
 }
 
+/*
+Image details from intersect points in Illistrator 
+
+274.999
+38.001  0.138185957039844
+66.999  0.243633613213139
+60.999  0.221815352055826
+64.001  0.232731755388201
+45.058  0.163847868537704
+--top-length: 22.1815352055826%;
+--back-length: 24.3633613213139%;
+--front-length: 23.2731755388201%;
+--bottom-length: var(--top-length);
+*/
+
 /* Overlap - From Top of Image */
 .cube img:nth-child(1) {
-  transform: rotateY(0deg) translateZ(100px) translateY(35px);
+  transform: rotateY(0deg) translateZ(100px) translateY(calc((100% * 0.221815352055826) * .138185957039844));
   /* clip-path: inset(0px 0px 86.3% 0px); */
   clip-path: inset(0px 0px 86.1814042960156% 0px);
 }
 /* Overlap - From Bottom of Image */
 .cube img:nth-child(2) {
-  transform: rotateY(0deg) translateZ(100px) translateY(-750px);
+  transform: rotateY(0deg) translateZ(100px) translateY(calc((100% * .163847868537704) - (100% * 0.836152131462296) - (100% * 0.221815352055826) ));
   /* clip-path: inset(83.5% 0px 00px 0px); */
   clip-path: inset(83.6152131462296% 0px 0px 0px);
 }
